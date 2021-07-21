@@ -1,0 +1,46 @@
+<resources>
+    <!-- some text -->
+    <string name="something_went_wrong">Ada sesuatu yang salah!</string>
+    <string name="source_offline">Siaran tidak dapat diakses!</string>
+    <string name="text_auto_retry">akan dicoba ulang otomatis dalam 5</string>
+    <string name="text_auto_retry_second">akan dicoba ulang otomatis dalam %d</string>
+    <string name="text_auto_retry_now">akan dicoba ulang otomatis sekarang</string>
+    <string name="no_network">Tidak ada koneksi internet!</string>
+    <string name="press_back_twice_exit_app">Tekan lagi untuk keluar dari aplikasi!</string>
+    <string name="press_back_twice_exit_player">Tekan lagi untuk keluar dari pemutar!</string>
+    <string name="track_selection_title">Pilih trek</string>
+    <string name="error_unsupported_video">Media menyertakan trek video, tetapi tidak ada yang dapat diputar oleh perangkat ini</string>
+    <string name="error_unsupported_audio">Media menyertakan trek audio, tetapi tidak ada yang dapat diputar oleh perangkat ini</string>
+
+    <!-- alert playlist error -->
+    <string name="playlist_updated">Playlist sudah diperbaharui!</string>
+    <string name="error_4xx">File playlist tidak dapat diakses!\nKode respon : %d</string>
+    <string name="error_5xx">Server tidak dapat diakses!\nKode respon : %d</string>
+    <string name="dialog_retry">Coba lagi</string>
+    <string name="dialog_cached">Gunakan cache</string>
+    <string name="dialog_default">Gunakan default</string>
+    <string name="player_no_channel_url">Tidak bisa mendapatkan link streaming</string>
+    <string name="local_playlist_read_error">Tidak bisa memuat NontonTV.json dari penyimpanan internal!</string>
+
+    <!-- alert update -->
+    <string name="alert_new_update">Pembaharuan</string>
+    <string name="dialog_download">Unduh APK</string>
+    <string name="dialog_skip">Abaikan Sehari</string>
+    <string name="message_update">Versi\n• Terpasang : %s (%d)\n• Terkini : %s (%d)\n\nPerubahan :</string>
+    <string name="message_update_no_changelog">\n• lain-lain</string>
+    <string name="no_donnload_manager">Android ini tidak punya pengelola unduhan</string>
+
+    <!-- alert contributors -->
+    <string name="alert_title_contributors">Penyumbang</string>
+    <string name="dialog_show_less">Kurangi Penampilan</string>
+    <string name="dialog_close">Tutup</string>
+    <string name="message_thanks_to">Terima kasih banyak kepada semua orang yang terlibat dalam proyek ini!\n\nTerutama orang-orang ini di github :\n</string>
+
+    <!-- settings -->
+    <string name="settings">Pengaturan</string>
+    <string name="launch_at_boot">Jalankan app saat boot</string>
+    <string name="open_last_watched">Putar terakhir dilihat</string>
+    <string name="reload_playlist">Muat ulang Playlist</string>
+    <string name="hint_custom_playlist">kosongkan utk memuat playlist lokal</string>
+    <string name="switch_custom_playlist">Playlist kustom</string>
+</resources>
