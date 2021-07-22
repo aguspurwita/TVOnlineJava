@@ -1,4 +1,4 @@
-package net.harimurti.tv;
+package com.aguspurwita.tv;
 
 import org.junit.Test;
 
