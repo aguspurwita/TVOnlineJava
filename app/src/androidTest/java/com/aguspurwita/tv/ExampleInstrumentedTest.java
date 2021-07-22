@@ -1,4 +1,4 @@
-package net.harimurti.tv;
+package com.aguspurwita.tv;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("net.harimurti.tv", appContext.getPackageName());
+        assertEquals("com.aguspurwita.tv", appContext.getPackageName());
     }
 }
