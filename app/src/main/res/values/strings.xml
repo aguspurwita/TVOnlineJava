@@ -4,11 +4,11 @@
     <!-- json link -->
     <string name="Youtube" translatable="false">https://youtu.be/A01M50KPo80</string>
     <string name="Instagram" translatable="false">https://www.instagram.com/trisna_edelweis/</string>
-    <string name="json_playlist" translatable="false">https://github.com/hariimurti/NontonTV/raw/master/json/playlist.json</string>
-    <string name="json_release" translatable="false">https://github.com/hariimurti/NontonTV/raw/master/json/release.json</string>
-    <string name="gh_contributors" translatable="false">https://api.github.com/repos/hariimurti/NontonTV/contributors</string>
+    <string name="json_playlist" translatable="false">https://github.com/aguspurwita/TVOnline/raw/main/json/playlist.json</string>
+    <string name="json_release" translatable="false">https://github.com/aguspurwita/TVOnline/raw/main/json/release.json</string>
+    <string name="gh_contributors" translatable="false">https://api.github.com/repos/aguspurwita/TVOnline/contributors</string>
 
-    <!-- some text -->
+    <!-- some text -->x
     <string name="something_went_wrong">Something went wrong!</string>
     <string name="source_offline">Broadcast not accessible!</string>
     <string name="text_auto_retry">retry automatically in 5</string>
@@ -30,7 +30,7 @@
     <string name="dialog_cached">Use cache</string>
     <string name="dialog_default">Use default</string>
     <string name="player_no_channel_url">Can\'t get streaming link</string>
-    <string name="local_playlist_read_error">Can\'t load NontonTV.json from internal storage!</string>
+    <string name="local_playlist_read_error">Can\'t load TVOnline.json from internal storage!</string>
 
     <!-- alert update -->
     <string name="alert_new_update">Update</string>
@@ -43,8 +43,8 @@
 
     <!-- alert contributors -->
     <string name="alert_title_contributors">Contributors</string>
-    <string name="dialog_website" translatable="false">Website</string>
-    <string name="dialog_telegram" translatable="false">Telegram</string>
+    <string name="dialog_youtube" translatable="false">Youtube</string>
+    <string name="dialog_instagram" translatable="false">Instagram</string>
     <string name="dialog_show_less">Show Less</string>
     <string name="dialog_close">Close</string>
     <string name="message_thanks_to">Many thanks to everyone involved in this project!\n\nEspecially these guys on github :\n</string>

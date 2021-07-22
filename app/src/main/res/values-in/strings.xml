@@ -20,7 +20,7 @@
     <string name="dialog_cached">Gunakan cache</string>
     <string name="dialog_default">Gunakan default</string>
     <string name="player_no_channel_url">Tidak bisa mendapatkan link streaming</string>
-    <string name="local_playlist_read_error">Tidak bisa memuat NontonTV.json dari penyimpanan internal!</string>
+    <string name="local_playlist_read_error">Tidak bisa memuat TV Online.json dari penyimpanan internal!</string>
 
     <!-- alert update -->
     <string name="alert_new_update">Pembaharuan</string>
