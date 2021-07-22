@@ -1,6 +1,0 @@
-{
-    "versionCode": 487,
-    "versionName": "v1.1",
-    "changelog": ["some bug fixes on android 4.4", "player: key menu to show track selection", "thanks to contributors (auto dismiss 10s)"],
-    "downloadUrl": "https://github.com/aguspurwita/TVOnline/releases/download/v1.1/com.aguspurwita.tv_v1.1_b487.apk"
-}
