@@ -305,8 +305,8 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle(R.string.alert_title_contributors)
                 .setMessage(message)
-                .setNeutralButton(R.string.dialog_youtube, (dialog, id) -> openWebsite(getString(R.string.Instagram)))
-                .setNegativeButton(R.string.dialog_instagram, (dialog, id) -> openWebsite(getString(R.string.Youtube)))
+                .setNeutralButton(R.string.dialog_instagram, (dialog, id) -> openWebsite(getString(R.string.Instagram)))
+                .setNegativeButton(R.string.dialog_youtube, (dialog, id) -> openWebsite(getString(R.string.Youtube)))
                 .setPositiveButton(preferences.isShowLessContributors() ? R.string.dialog_close : R.string.dialog_show_less,
                         (dialog, id) -> preferences.setShowLessContributors());
         AlertDialog dialog = alert.create();

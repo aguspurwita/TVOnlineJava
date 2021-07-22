@@ -18,7 +18,7 @@ import java.io.FileWriter;
 
 public class PlaylistHelper {
     private static final String TAG = "PlaylistHelper";
-    private static final String PLAYLIST_JSON = "NontonTV.json";
+    private static final String PLAYLIST_JSON = "TVOnline.json";
 
     public static final int MODE_DEFAULT = 0;
     public static final int MODE_CUSTOM = 1;
