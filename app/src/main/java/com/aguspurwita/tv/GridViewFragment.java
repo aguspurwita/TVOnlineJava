@@ -1,4 +1,4 @@
-package net.harimurti.tv;
+package com.aguspurwita.tv;
 
 import android.os.Bundle;
 
@@ -11,8 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
 
-import net.harimurti.tv.adapter.ContentAdapter;
-import net.harimurti.tv.data.Channel;
+import com.aguspurwita.tv.adapter.ContentAdapter;
+import com.aguspurwita.tv.data.Channel;
 
 import java.util.ArrayList;
 

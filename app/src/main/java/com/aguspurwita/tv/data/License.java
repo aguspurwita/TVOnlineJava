@@ -1,4 +1,4 @@
-package net.harimurti.tv.data;
+package com.aguspurwita.tv.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;

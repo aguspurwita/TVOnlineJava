@@ -1,4 +1,4 @@
-package net.harimurti.tv;
+package com.aguspurwita.tv;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,10 +29,10 @@ import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSource;
 import com.google.android.exoplayer2.upstream.HttpDataSource;
 
-import net.harimurti.tv.data.License;
-import net.harimurti.tv.extra.AsyncSleep;
-import net.harimurti.tv.extra.Network;
-import net.harimurti.tv.extra.Preferences;
+import com.aguspurwita.tv.data.License;
+import com.aguspurwita.tv.extra.AsyncSleep;
+import com.aguspurwita.tv.extra.Network;
+import com.aguspurwita.tv.extra.Preferences;
 
 import java.util.Arrays;
 import java.util.List;

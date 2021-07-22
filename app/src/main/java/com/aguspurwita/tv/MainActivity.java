@@ -1,4 +1,4 @@
-package net.harimurti.tv;
+package com.aguspurwita.tv;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,14 +39,14 @@ import com.google.android.material.tabs.TabLayoutMediator;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 
-import net.harimurti.tv.adapter.ViewPagerAdapter;
-import net.harimurti.tv.data.GithubUser;
-import net.harimurti.tv.data.Playlist;
-import net.harimurti.tv.data.Release;
-import net.harimurti.tv.extra.PlaylistHelper;
-import net.harimurti.tv.extra.Network;
-import net.harimurti.tv.extra.Preferences;
-import net.harimurti.tv.extra.TLSSocketFactory;
+import com.aguspurwita.tv.adapter.ViewPagerAdapter;
+import com.aguspurwita.tv.data.GithubUser;
+import com.aguspurwita.tv.data.Playlist;
+import com.aguspurwita.tv.data.Release;
+import com.aguspurwita.tv.extra.PlaylistHelper;
+import com.aguspurwita.tv.extra.Network;
+import com.aguspurwita.tv.extra.Preferences;
+import com.aguspurwita.tv.extra.TLSSocketFactory;
 
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
@@ -305,8 +305,8 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle(R.string.alert_title_contributors)
                 .setMessage(message)
-                .setNeutralButton(R.string.dialog_telegram, (dialog, id) -> openWebsite(getString(R.string.telegram_group)))
-                .setNegativeButton(R.string.dialog_website, (dialog, id) -> openWebsite(getString(R.string.website)))
+                .setNeutralButton(R.string.dialog_youtube, (dialog, id) -> openWebsite(getString(R.string.Instagram)))
+                .setNegativeButton(R.string.dialog_instagram, (dialog, id) -> openWebsite(getString(R.string.Youtube)))
                 .setPositiveButton(preferences.isShowLessContributors() ? R.string.dialog_close : R.string.dialog_show_less,
                         (dialog, id) -> preferences.setShowLessContributors());
         AlertDialog dialog = alert.create();

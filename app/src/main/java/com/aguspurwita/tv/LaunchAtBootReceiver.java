@@ -1,10 +1,10 @@
-package net.harimurti.tv;
+package com.aguspurwita.tv;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import net.harimurti.tv.extra.Preferences;
+import com.aguspurwita.tv.extra.Preferences;
 
 public class LaunchAtBootReceiver extends BroadcastReceiver {
 

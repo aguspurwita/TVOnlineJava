@@ -1,4 +1,4 @@
-package net.harimurti.tv.extra;
+package com.aguspurwita.tv.extra;
 
 import android.content.Context;
 import android.os.Environment;
@@ -6,8 +6,8 @@ import android.util.Log;
 
 import com.google.gson.Gson;
 
-import net.harimurti.tv.R;
-import net.harimurti.tv.data.Playlist;
+import com.aguspurwita.tv.R;
+import com.aguspurwita.tv.data.Playlist;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

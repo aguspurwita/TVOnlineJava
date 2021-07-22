@@ -1,4 +1,4 @@
-package net.harimurti.tv.adapter;
+package com.aguspurwita.tv.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,9 +14,9 @@ import android.widget.GridView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import net.harimurti.tv.PlayerActivity;
-import net.harimurti.tv.R;
-import net.harimurti.tv.data.Channel;
+import com.aguspurwita.tv.PlayerActivity;
+import com.aguspurwita.tv.R;
+import com.aguspurwita.tv.data.Channel;
 
 import java.util.ArrayList;
 

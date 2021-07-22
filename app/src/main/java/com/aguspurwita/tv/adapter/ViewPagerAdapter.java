@@ -1,13 +1,13 @@
-package net.harimurti.tv.adapter;
+package com.aguspurwita.tv.adapter;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import net.harimurti.tv.GridViewFragment;
-import net.harimurti.tv.data.Category;
-import net.harimurti.tv.data.Channel;
-import net.harimurti.tv.data.Playlist;
+import com.aguspurwita.tv.GridViewFragment;
+import com.aguspurwita.tv.data.Category;
+import com.aguspurwita.tv.data.Channel;
+import com.aguspurwita.tv.data.Playlist;
 
 import java.util.ArrayList;
 

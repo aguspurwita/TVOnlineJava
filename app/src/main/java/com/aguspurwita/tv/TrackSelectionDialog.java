@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.harimurti.tv;
+package com.aguspurwita.tv;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
