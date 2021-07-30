@@ -45,6 +45,16 @@
   ],
   "channels": [
     {
+      "cid": 2,
+      "name": "&Flix",
+      "stream_url": "https://y5w8j4a9.ssl.hwcdn.net/andflixhd/tracks-v1a1/mono.m3u8"
+    },
+    {
+      "cid": 2,
+      "name": "&Prive",
+      "stream_url": "https://y5w8j4a9.ssl.hwcdn.net/andprivehd/tracks-v1a1/mono.m3u8"
+    },
+    {
       "cid": 1,
       "name": "ABC Australia",
       "stream_url": "https://liveanevia.mncnow.id/live/eds/AustraliaPlus/sa_dash_vmx/AustraliaPlus.mpd"
@@ -131,23 +141,53 @@
     },
     {
       "cid": 7,
-      "name": "ASSP1",
-      "stream_url": "http://3.0.20.58:8000/play/ASSP1/index.m3u8"
+      "name": "Astro Arena",
+      "stream_url": "http://185.180.221.194:8278/streams/d/Arena/playlist.m3u8"
+    },
+    {
+      "cid": 1,
+      "name": "Astro Awani",
+      "stream_url": "http://50.7.161.82:8278/streams/d/Awani/playlist.m3u8"
+    },
+    {
+      "cid": 4,
+      "name": "Astro Ceria",
+      "stream_url": "http://50.7.161.82:8278/streams/d/Ceria/playlist.m3u8"
+    },
+    {
+      "cid": 2,
+      "name": "Astro Citra",
+      "stream_url": "http://50.7.161.82:8278/streams/d/Citra/playlist.m3u8"
+    },
+    {
+      "cid": 2,
+      "name": "Astro Oasis",
+      "stream_url": "http://50.7.161.82:8278/streams/d/Oasis/playlist.m3u8"
+    },
+    {
+      "cid": 2,
+      "name": "Astro Prima",
+      "stream_url": "http://185.180.221.194:8278/streams/d/Prima/playlist.m3u8"
     },
     {
       "cid": 7,
-      "name": "ASSP2",
-      "stream_url": "http://3.0.20.58:8000/play/ASSP2/index.m3u8"
+      "name": "Astro SuperSports 1",
+      "stream_url": "http://portal.geniptv.com:8080/greenpoison8/GZprWONABH/18623"
     },
     {
       "cid": 7,
-      "name": "ASSP3",
-      "stream_url": "http://3.0.20.58:8000/play/ASSP3/index.m3u8"
+      "name": "Astro SuperSports 2",
+      "stream_url": "http://portal.geniptv.com:8080/greenpoison8/GZprWONABH/18622"
     },
     {
       "cid": 7,
-      "name": "ASSP4",
-      "stream_url": "http://3.0.20.58:8000/play/ASSP4/index.m3u8"
+      "name": "Astro SuperSports 3",
+      "stream_url": "http://portal.geniptv.com:8080/greenpoison8/GZprWONABH/18621"
+    },
+    {
+      "cid": 7,
+      "name": "Astro SuperSports 4",
+      "stream_url": "http://portal.geniptv.com:8080/greenpoison8/GZprWONABH/18620"
     },
     {
       "cid": 2,
@@ -163,11 +203,6 @@
       "cid": 4,
       "name": "BabyFirst",
       "stream_url": "http://mkctvbro.my.id/horas/pakailah.m3u8?id=babyfirst&bandwidth=default&sync=0"
-    },
-    {
-      "cid": 0,
-      "name": "Bali TV",
-      "stream_url": "https://liveanevia.mncnow.id/live/eds/BaliTV_Timeshift/sa_dash_timeshift/BaliTV_Timeshift.mpd"
     },
     {
       "cid": 5,
@@ -532,7 +567,7 @@
     {
       "cid": 7,
       "name": "ESPN 2",
-      "stream_url": "http://164.68.124.111/espn2.m3u8"
+      "stream_url": "https://stream2.grandma.fit/espn2.m3u8"
     },
     {
       "cid": 6,
@@ -1085,6 +1120,11 @@
       "stream_url": "http://36.89.47.217:11935/rrinet/live/index.m3u8"
     },
     {
+      "cid": 7,
+      "name": "RTM Sport",
+      "stream_url": "http://185.180.221.194:8278/streams/d/Rtmsport/playlist.m3u8"
+    },
+    {
       "cid": 0,
       "name": "RTV",
       "stream_url": "https://liveanevia.mncnow.id/live/eds/RTV/sa_dash_vmx/RTV.mpd"
@@ -1148,6 +1188,31 @@
       "cid": 4,
       "name": "Spacetoon [ID]",
       "stream_url": "http://stream1.ninmedia.tv:1935/spacetoon/udp.stream_360p/chunklist.m3u8"
+    },
+    {
+      "cid": 7,
+      "name": "Sport TV 1",
+      "stream_url": "http://77.83.117.60:8888/02_SPORTTV_1_720p/chunklist.m3u8"
+    },
+    {
+      "cid": 7,
+      "name": "Sport TV 2",
+      "stream_url": "http://77.83.117.60:8888/02_SPORTTV_2_720p/chunklist.m3u8"
+    },
+    {
+      "cid": 7,
+      "name": "Sport TV 3",
+      "stream_url": "http://77.83.117.60:8888/02_SPORTTV_3_720p/chunklist.m3u8"
+    },
+    {
+      "cid": 7,
+      "name": "Sport TV 4",
+      "stream_url": "http://77.83.117.60:8888/02_SPORTTV_4_720p/chunklist.m3u8"
+    },
+    {
+      "cid": 7,
+      "name": "Sport TV 5",
+      "stream_url": "http://77.83.117.60:8888/02_SPORTTV_5_720p/chunklist.m3u8"
     },
     {
       "cid": 7,
