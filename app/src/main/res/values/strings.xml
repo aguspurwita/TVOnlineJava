@@ -4,9 +4,9 @@
     <!-- json link -->
     <string name="Youtube" translatable="false">https://youtu.be/A01M50KPo80</string>
     <string name="Instagram" translatable="false">https://www.instagram.com/trisna_edelweis/</string>
-    <string name="json_playlist" translatable="false">https://github.com/aguspurwita/TVOnline/raw/main/json/playlist.json</string>
-    <string name="json_release" translatable="false">https://github.com/aguspurwita/TVOnline/raw/main/json/release.json</string>
-    <string name="gh_contributors" translatable="false">https://api.github.com/repos/aguspurwita/TVOnline/contributors</string>
+    <string name="json_playlist" translatable="false">https://github.com/aguspurwita/TVOnlineJava/raw/main/json/playlist.json</string>
+    <string name="json_release" translatable="false">https://github.com/aguspurwita/TVOnlineJava/raw/main/json/release.json</string>
+    <string name="gh_contributors" translatable="false">https://api.github.com/repos/aguspurwita/TVOnlineJava/contributors</string>
 
     <!-- some text -->
     <string name="something_went_wrong">Something went wrong!</string>
