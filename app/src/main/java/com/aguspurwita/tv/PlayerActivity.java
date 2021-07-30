@@ -1,18 +1,31 @@
 package com.aguspurwita.tv;
 
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
+
 import android.net.Uri;
 import android.os.Build;
-import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.KeyEvent;
-import android.view.View;
 import android.view.WindowInsetsController;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
@@ -51,11 +64,52 @@ public class PlayerActivity extends AppCompatActivity {
     private View layoutStatus, layoutSpin, layoutText, trackButton;
     private TextView tvStatus, tvRetry;
 
+    private InterstitialAd mInterstitialAd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player);
+/**
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
 
+        loadInterstitial();
+
+        findViewById(R.id.buttonAd).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mInterstitialAd !=null) {
+                    mInterstitialAd.show(PlayerActivity.this);
+
+                    mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                        @Override
+                        public void onAdDismissedFullScreenContent() {
+                            // Saat iklan ditutup
+                            loadInterstitial();
+                            Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
+                        }
+
+                        @Override
+                        public void onAdFailedToShowFullScreenContent(AdError adError) {
+                            // Saat iklan gagal muncul
+                            Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
+                        }
+
+                        @Override
+                        public void onAdShowedFullScreenContent() {
+                            // saat iklan sudah muncul
+                            mInterstitialAd = null;
+                            Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
+            }
+        });
+*/
         isFirst = false;
         preferences = new Preferences(this);
 
@@ -257,6 +311,35 @@ public class PlayerActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+/**        if (mInterstitialAd !=null) {
+            mInterstitialAd.show(PlayerActivity.this);
+
+            mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                @Override
+                public void onAdDismissedFullScreenContent() {
+                    // Saat iklan ditutup
+                    loadInterstitial();
+                    PlayerActivity.super.onBackPressed();
+                    Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void onAdFailedToShowFullScreenContent(AdError adError) {
+                    // Saat iklan gagal muncul
+                    Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void onAdShowedFullScreenContent() {
+                    // saat iklan sudah muncul
+                    mInterstitialAd = null;
+                    Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
+                }
+            });
+        } else {
+            super.onBackPressed();
+        }
+*/
         if (doubleBackToExitPressedOnce) {
             super.onBackPressed();
             this.finish();
@@ -286,4 +369,25 @@ public class PlayerActivity extends AppCompatActivity {
         super.onStop();
         player.release();
     }
+/**
+    private void loadInterstitial() {
+        InterstitialAd.load(this, getString(R.string.id_Unit_Interstitial), new AdRequest.Builder().build(),
+                new InterstitialAdLoadCallback() {
+                    @Override
+                    public void onAdLoaded(@NonNull InterstitialAd interstitial) {
+                        // Saat iklan berhasil dimuat
+                        mInterstitialAd = interstitial;
+                        Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                        // Saat iklan gagal dimuat
+                        mInterstitialAd = null;
+                        Toast.makeText(getApplicationContext(), "" + loadAdError.getMessage(),
+                                Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+*/
 }

@@ -43,4 +43,9 @@
     <string name="reload_playlist">Muat ulang Playlist</string>
     <string name="hint_custom_playlist">kosongkan utk memuat playlist lokal</string>
     <string name="switch_custom_playlist">Playlist kustom</string>
+
+    <!--unit iklan dari admob -->
+    <string name="id_Applikasi">ca-app-pub-3940256099942544~3347511713</string>  <!--id applikasi -->
+    <string name="id_Unit_Interstitial">ca-app-pub-3940256099942544/1033173712</string>  <!--id  unit iklan interstitial -->
+    <string name="id_Unit_Banner">ca-app-pub-3940256099942544/6300978111</string>  <!--id  unit iklan interstitial -->
 </resources>

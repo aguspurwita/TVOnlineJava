@@ -8,7 +8,7 @@
     <string name="json_release" translatable="false">https://github.com/aguspurwita/TVOnline/raw/main/json/release.json</string>
     <string name="gh_contributors" translatable="false">https://api.github.com/repos/aguspurwita/TVOnline/contributors</string>
 
-    <!-- some text -->x
+    <!-- some text -->
     <string name="something_went_wrong">Something went wrong!</string>
     <string name="source_offline">Broadcast not accessible!</string>
     <string name="text_auto_retry">retry automatically in 5</string>
@@ -56,4 +56,9 @@
     <string name="reload_playlist">Reload Playlist</string>
     <string name="hint_custom_playlist">leave blank to load local json</string>
     <string name="switch_custom_playlist">Custom playlist</string>
+
+    <!--unit iklan dari admob -->
+    <string name="id_Applikasi">ca-app-pub-3940256099942544~3347511713</string>  <!--id applikasi -->
+    <string name="id_Unit_Interstitial">ca-app-pub-3940256099942544/1033173712</string>  <!--id  unit iklan interstitial -->
+    <string name="id_Unit_Banner">ca-app-pub-3940256099942544/6300978111</string>  <!--id  unit iklan interstitial -->
 </resources>
