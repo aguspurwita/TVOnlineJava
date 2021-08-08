@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.exoplayer2.ui.BuildConfig;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.FullScreenContentCallback;
@@ -68,6 +69,8 @@ import com.aguspurwita.tv.extra.TLSSocketFactory;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 
+import com.google.gson.annotations.SerializedName;
+
 public class MainActivity extends AppCompatActivity {
     private boolean doubleBackToExitPressedOnce;
     private TabLayout tabLayout;
@@ -103,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
         loadInterstitial();
 
-        findViewById(R.id.buttonAd).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.buttonAd1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (mInterstitialAd !=null) {
@@ -114,20 +117,12 @@ public class MainActivity extends AppCompatActivity {
                         public void onAdDismissedFullScreenContent() {
                             // Saat iklan ditutup
                             loadInterstitial();
-                            Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
-                        }
-
-                        @Override
-                        public void onAdFailedToShowFullScreenContent(AdError adError) {
-                            // Saat iklan gagal muncul
-                            Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
                         }
 
                         @Override
                         public void onAdShowedFullScreenContent() {
                             // saat iklan sudah muncul
                             mInterstitialAd = null;
-                            Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
@@ -229,15 +224,12 @@ public class MainActivity extends AppCompatActivity {
                     public void onAdLoaded(@NonNull InterstitialAd interstitial) {
                         // Saat iklan berhasil dimuat
                         mInterstitialAd = interstitial;
-                        Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
                     public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                         // Saat iklan gagal dimuat
                         mInterstitialAd = null;
-                        Toast.makeText(getApplicationContext(), "" + loadAdError.getMessage(),
-                                Toast.LENGTH_SHORT).show();
                     }
                 });
     }
@@ -447,6 +439,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+
         if (mInterstitialAd !=null) {
             mInterstitialAd.show(MainActivity.this);
 
@@ -456,20 +449,12 @@ public class MainActivity extends AppCompatActivity {
                     // Saat iklan ditutup
                     loadInterstitial();
                     MainActivity.super.onBackPressed();
-                    Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
-                }
-
-                @Override
-                public void onAdFailedToShowFullScreenContent(AdError adError) {
-                    // Saat iklan gagal muncul
-                    Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
                 public void onAdShowedFullScreenContent() {
                     // saat iklan sudah muncul
                     mInterstitialAd = null;
-                    Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
                 }
             });
         } else {
@@ -488,7 +473,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, getString(R.string.press_back_twice_exit_app), Toast.LENGTH_SHORT).show();
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> doubleBackToExitPressedOnce = false, 2000);
     }

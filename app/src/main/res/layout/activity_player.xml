@@ -7,10 +7,9 @@
     tools:context=".PlayerActivity">
 
     <Button
-        android:id="@+id/buttonAd"
+        android:id="@+id/buttonAd2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Show Ad"
         android:textSize="30sp"
         android:textStyle="bold"
         android:visibility="gone"

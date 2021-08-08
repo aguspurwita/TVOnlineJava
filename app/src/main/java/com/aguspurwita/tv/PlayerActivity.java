@@ -70,7 +70,7 @@ public class PlayerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player);
-/**
+
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
@@ -79,7 +79,7 @@ public class PlayerActivity extends AppCompatActivity {
 
         loadInterstitial();
 
-        findViewById(R.id.buttonAd).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.buttonAd2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (mInterstitialAd !=null) {
@@ -90,26 +90,18 @@ public class PlayerActivity extends AppCompatActivity {
                         public void onAdDismissedFullScreenContent() {
                             // Saat iklan ditutup
                             loadInterstitial();
-                            Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
-                        }
-
-                        @Override
-                        public void onAdFailedToShowFullScreenContent(AdError adError) {
-                            // Saat iklan gagal muncul
-                            Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
                         }
 
                         @Override
                         public void onAdShowedFullScreenContent() {
                             // saat iklan sudah muncul
                             mInterstitialAd = null;
-                            Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
             }
         });
-*/
+
         isFirst = false;
         preferences = new Preferences(this);
 
@@ -311,7 +303,7 @@ public class PlayerActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-/**        if (mInterstitialAd !=null) {
+        if (mInterstitialAd !=null) {
             mInterstitialAd.show(PlayerActivity.this);
 
             mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
@@ -320,26 +312,18 @@ public class PlayerActivity extends AppCompatActivity {
                     // Saat iklan ditutup
                     loadInterstitial();
                     PlayerActivity.super.onBackPressed();
-                    Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
-                }
-
-                @Override
-                public void onAdFailedToShowFullScreenContent(AdError adError) {
-                    // Saat iklan gagal muncul
-                    Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
                 public void onAdShowedFullScreenContent() {
                     // saat iklan sudah muncul
                     mInterstitialAd = null;
-                    Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
                 }
             });
         } else {
             super.onBackPressed();
         }
-*/
+
         if (doubleBackToExitPressedOnce) {
             super.onBackPressed();
             this.finish();
@@ -347,7 +331,6 @@ public class PlayerActivity extends AppCompatActivity {
         }
 
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, getString(R.string.press_back_twice_exit_player), Toast.LENGTH_SHORT).show();
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> doubleBackToExitPressedOnce = false, 2000);
     }
@@ -369,7 +352,7 @@ public class PlayerActivity extends AppCompatActivity {
         super.onStop();
         player.release();
     }
-/**
+
     private void loadInterstitial() {
         InterstitialAd.load(this, getString(R.string.id_Unit_Interstitial), new AdRequest.Builder().build(),
                 new InterstitialAdLoadCallback() {
@@ -377,17 +360,13 @@ public class PlayerActivity extends AppCompatActivity {
                     public void onAdLoaded(@NonNull InterstitialAd interstitial) {
                         // Saat iklan berhasil dimuat
                         mInterstitialAd = interstitial;
-                        Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
                     public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                         // Saat iklan gagal dimuat
                         mInterstitialAd = null;
-                        Toast.makeText(getApplicationContext(), "" + loadAdError.getMessage(),
-                                Toast.LENGTH_SHORT).show();
                     }
                 });
     }
-*/
 }

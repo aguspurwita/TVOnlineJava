@@ -7,6 +7,7 @@
     <string name="json_playlist" translatable="false">https://github.com/aguspurwita/TVOnlineJava/raw/main/json/playlist.json</string>
     <string name="json_release" translatable="false">https://github.com/aguspurwita/TVOnlineJava/raw/main/json/release.json</string>
     <string name="gh_contributors" translatable="false">https://api.github.com/repos/aguspurwita/TVOnlineJava/contributors</string>
+    <string name="adsense" translatable="false">https://github.com/aguspurwita/TVOnlineJava/raw/main/json/adsense.json</string>
 
     <!-- some text -->
     <string name="something_went_wrong">Something went wrong!</string>
@@ -58,7 +59,8 @@
     <string name="switch_custom_playlist">Custom playlist</string>
 
     <!--unit iklan dari admob -->
-    <string name="id_Applikasi">ca-app-pub-3940256099942544~3347511713</string>  <!--id applikasi -->
-    <string name="id_Unit_Interstitial">ca-app-pub-3940256099942544/1033173712</string>  <!--id  unit iklan interstitial -->
-    <string name="id_Unit_Banner">ca-app-pub-3940256099942544/6300978111</string>  <!--id  unit iklan interstitial -->
+    <string name="id_Applikasi" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="id_Unit_Interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="id_Unit_Banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
 </resources>
