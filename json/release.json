@@ -1,6 +1,6 @@
 {
     "versionCode": 100,
     "versionName": "v1.1",
-    "changelog": ["some bug fixes on android 4.4", "player: key menu to show track selection", "thanks to contributors (auto dismiss 10s)"],
+    "changelog": ["add player navigation", "add screen mode", "select playlist file", "support picture-in-picture", "and more.."],
     "downloadUrl": "https://github.com/aguspurwita/TVOnlineJava/releases/download/v1.1/com.aguspurwita.tv_v1.1_b100.apk"
 }
