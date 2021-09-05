@@ -740,11 +740,6 @@
       "stream_url": "https://stream-cdn.mncnow.id/live/eds/IDX/sa_dash_vmx/IDX.mpd"
     },
     {
-      "cid": 0,
-      "name": "Indosiar",
-      "stream_url": "https://liveanevia.mncnow.id/live/eds/Indosiar/sa_dash_vmx/Indosiar.mpd"
-    },
-    {
       "cid": 1,
       "name": "iNews",
       "stream_url": "https://liveanevia.mncnow.id/live/eds/iNewsTV/sa_dash_vmx/iNewsTV.mpd"
